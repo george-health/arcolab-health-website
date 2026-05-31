@@ -1,0 +1,94 @@
+<h2>Round 2 — leaning minimal &amp; arc-driven</h2>
+<p class="subtitle">Since E was closest, these all stay minimal and monoline (mostly no tile). Each is shown big, at favicon size, and in a header lockup. Click any you like — or tell me what's still off.</p>
+
+<style>
+  .logos { display:grid; grid-template-columns:1fr; gap:16px; }
+  @media(min-width:780px){ .logos{ grid-template-columns:1fr 1fr; } }
+  .lo{ border:1px solid #d8dee6; border-radius:16px; background:#fff; padding:24px; cursor:pointer; transition:transform .15s, box-shadow .15s, border-color .15s; }
+  .lo:hover{ transform:translateY(-4px); box-shadow:0 14px 34px rgba(20,40,70,.13); border-color:#b9c4d1; }
+  .lo.selected{ outline:3px solid #2660b1; outline-offset:2px; }
+  .lo-top{ display:flex; align-items:center; gap:18px; min-height:78px; }
+  .sizes{ display:flex; align-items:center; gap:14px; flex:none; }
+  .lo-name{ font:600 15px/1.3 Inter,sans-serif; color:#16263b; }
+  .lo-desc{ font:400 12.5px/1.5 Inter,sans-serif; color:#5a6675; margin-top:3px; }
+  .lo-foot{ display:flex; align-items:center; gap:11px; margin-top:20px; padding-top:16px; border-top:1px solid #eef1f5; }
+  .lock{ display:inline-flex; align-items:center; gap:10px; font:650 17px/1 Inter,sans-serif; color:#16263b; letter-spacing:-.01em; }
+  .lock .muted{ color:#8a97a6; font-weight:500; }
+  .chip{ width:30px; height:30px; border-radius:8px; background:#0e1b2e; display:grid; place-items:center; } /* dark check */
+</style>
+
+<div class="logos">
+
+  <!-- F: Sunrise dome -->
+  <div class="lo" data-choice="f" onclick="toggleSelect(this)">
+    <div class="lo-top">
+      <div class="sizes">
+        <svg width="60" height="60" viewBox="0 0 48 48" fill="none"><path d="M7 33 a17 17 0 0 1 34 0" stroke="url(#f1)" stroke-width="2.8" stroke-linecap="round" fill="none"/><line x1="6" y1="38" x2="42" y2="38" stroke="#cdd6e0" stroke-width="2.2" stroke-linecap="round"/><circle cx="24" cy="33" r="3.2" fill="#2e9e94"/><defs><linearGradient id="f1" x1="7" y1="16" x2="41" y2="33"><stop stop-color="#2660b1"/><stop offset="1" stop-color="#2e9e94"/></linearGradient></defs></svg>
+        <svg width="16" height="16" viewBox="0 0 48 48" fill="none"><path d="M7 33 a17 17 0 0 1 34 0" stroke="#2660b1" stroke-width="4" stroke-linecap="round" fill="none"/><circle cx="24" cy="33" r="4" fill="#2e9e94"/></svg>
+      </div>
+      <div><div class="lo-name">F · Sunrise</div><div class="lo-desc">A dome rising over a horizon line, sun at center. Optimistic and calm; the most "new day" feeling.</div></div>
+    </div>
+    <div class="lo-foot"><div class="lock"><svg width="26" height="26" viewBox="0 0 48 48" fill="none"><path d="M7 33 a17 17 0 0 1 34 0" stroke="url(#f2)" stroke-width="3.2" stroke-linecap="round" fill="none"/><line x1="6" y1="38" x2="42" y2="38" stroke="#cdd6e0" stroke-width="2.6" stroke-linecap="round"/><circle cx="24" cy="33" r="3.6" fill="#2e9e94"/><defs><linearGradient id="f2" x1="7" y1="16" x2="41" y2="33"><stop stop-color="#2660b1"/><stop offset="1" stop-color="#2e9e94"/></linearGradient></defs></svg> Arcolab <span class="muted">Health</span></div></div>
+  </div>
+
+  <!-- G: Open ring -->
+  <div class="lo" data-choice="g" onclick="toggleSelect(this)">
+    <div class="lo-top">
+      <div class="sizes">
+        <svg width="60" height="60" viewBox="0 0 48 48" fill="none"><path d="M31 12 A14 14 0 1 0 38 26" stroke="url(#g1b)" stroke-width="3" stroke-linecap="round" fill="none"/><circle cx="31" cy="12" r="3.1" fill="#2660b1"/><circle cx="38" cy="26" r="3.1" fill="#2e9e94"/><defs><linearGradient id="g1b" x1="10" y1="10" x2="40" y2="40"><stop stop-color="#2660b1"/><stop offset="1" stop-color="#2e9e94"/></linearGradient></defs></svg>
+        <svg width="16" height="16" viewBox="0 0 48 48" fill="none"><path d="M31 12 A14 14 0 1 0 38 26" stroke="#2660b1" stroke-width="4.4" stroke-linecap="round" fill="none"/><circle cx="38" cy="26" r="4" fill="#2e9e94"/></svg>
+      </div>
+      <div><div class="lo-name">G · Open Loop</div><div class="lo-desc">An open ring with two end-dots — continuous care, never closed off. Abstract, modern, a hint of "a".</div></div>
+    </div>
+    <div class="lo-foot"><div class="lock"><svg width="26" height="26" viewBox="0 0 48 48" fill="none"><path d="M31 12 A14 14 0 1 0 38 26" stroke="url(#g2b)" stroke-width="3.4" stroke-linecap="round" fill="none"/><circle cx="31" cy="12" r="3.2" fill="#2660b1"/><circle cx="38" cy="26" r="3.2" fill="#2e9e94"/><defs><linearGradient id="g2b" x1="10" y1="10" x2="40" y2="40"><stop stop-color="#2660b1"/><stop offset="1" stop-color="#2e9e94"/></linearGradient></defs></svg> Arcolab <span class="muted">Health</span></div></div>
+  </div>
+
+  <!-- H: Ascending dots on arc -->
+  <div class="lo" data-choice="h" onclick="toggleSelect(this)">
+    <div class="lo-top">
+      <div class="sizes">
+        <svg width="60" height="60" viewBox="0 0 48 48" fill="none"><path d="M9 35 Q24 7 39 19" stroke="#cdd6e0" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="9" cy="35" r="2.6" fill="#2660b1"/><circle cx="20" cy="21" r="3.2" fill="#2660b1"/><circle cx="31" cy="13.5" r="3.8" fill="#2e9e94"/><circle cx="39" cy="19" r="4.4" fill="#2e9e94"/><defs></defs></svg>
+        <svg width="16" height="16" viewBox="0 0 48 48" fill="none"><circle cx="11" cy="34" r="4" fill="#2660b1"/><circle cx="24" cy="20" r="4.6" fill="#2660b1"/><circle cx="37" cy="14" r="5.4" fill="#2e9e94"/></svg>
+      </div>
+      <div><div class="lo-name">H · Ascending</div><div class="lo-desc">Dots growing along a rising arc — progress, momentum, data. The most "AI / tech" of this round.</div></div>
+    </div>
+    <div class="lo-foot"><div class="lock"><svg width="26" height="26" viewBox="0 0 48 48" fill="none"><path d="M9 35 Q24 7 39 19" stroke="#cdd6e0" stroke-width="2.4" stroke-linecap="round" fill="none"/><circle cx="9" cy="35" r="3" fill="#2660b1"/><circle cx="20" cy="21" r="3.6" fill="#2660b1"/><circle cx="31" cy="13.5" r="4.2" fill="#2e9e94"/><circle cx="39" cy="19" r="4.8" fill="#2e9e94"/></svg> Arcolab <span class="muted">Health</span></div></div>
+  </div>
+
+  <!-- I: Radiating arcs -->
+  <div class="lo" data-choice="i" onclick="toggleSelect(this)">
+    <div class="lo-top">
+      <div class="sizes">
+        <svg width="60" height="60" viewBox="0 0 48 48" fill="none"><circle cx="15" cy="33" r="3.4" fill="#2660b1"/><path d="M15 23 a10 10 0 0 1 10 10" stroke="url(#i1)" stroke-width="2.8" stroke-linecap="round" fill="none"/><path d="M15 15 a18 18 0 0 1 18 18" stroke="url(#i1)" stroke-width="2.8" stroke-linecap="round" fill="none" opacity=".55"/><defs><linearGradient id="i1" x1="15" y1="15" x2="33" y2="33"><stop stop-color="#2660b1"/><stop offset="1" stop-color="#2e9e94"/></linearGradient></defs></svg>
+        <svg width="16" height="16" viewBox="0 0 48 48" fill="none"><circle cx="15" cy="33" r="5" fill="#2660b1"/><path d="M15 20 a13 13 0 0 1 13 13" stroke="#2e9e94" stroke-width="4.2" stroke-linecap="round" fill="none"/></svg>
+      </div>
+      <div><div class="lo-name">I · Signal</div><div class="lo-desc">A point radiating arcs outward — reach, connection, a pulse going out. Quietly techy, distinctive.</div></div>
+    </div>
+    <div class="lo-foot"><div class="lock"><svg width="26" height="26" viewBox="0 0 48 48" fill="none"><circle cx="15" cy="33" r="3.8" fill="#2660b1"/><path d="M15 23 a10 10 0 0 1 10 10" stroke="url(#i2)" stroke-width="3.2" stroke-linecap="round" fill="none"/><path d="M15 15 a18 18 0 0 1 18 18" stroke="url(#i2)" stroke-width="3.2" stroke-linecap="round" fill="none" opacity=".55"/><defs><linearGradient id="i2" x1="15" y1="15" x2="33" y2="33"><stop stop-color="#2660b1"/><stop offset="1" stop-color="#2e9e94"/></linearGradient></defs></svg> Arcolab <span class="muted">Health</span></div></div>
+  </div>
+
+  <!-- J: Twin-arc peak A -->
+  <div class="lo" data-choice="j" onclick="toggleSelect(this)">
+    <div class="lo-top">
+      <div class="sizes">
+        <svg width="60" height="60" viewBox="0 0 48 48" fill="none"><path d="M10 39 Q15 15 24 13" stroke="url(#j1)" stroke-width="3.2" stroke-linecap="round" fill="none"/><path d="M38 39 Q33 15 24 13" stroke="url(#j1)" stroke-width="3.2" stroke-linecap="round" fill="none"/><circle cx="24" cy="13" r="3.2" fill="#2e9e94"/><defs><linearGradient id="j1" x1="10" y1="13" x2="38" y2="39"><stop stop-color="#2660b1"/><stop offset="1" stop-color="#2e9e94"/></linearGradient></defs></svg>
+        <svg width="16" height="16" viewBox="0 0 48 48" fill="none"><path d="M10 39 Q15 15 24 13" stroke="#2660b1" stroke-width="4.4" stroke-linecap="round" fill="none"/><path d="M38 39 Q33 15 24 13" stroke="#2e9e94" stroke-width="4.4" stroke-linecap="round" fill="none"/></svg>
+      </div>
+      <div><div class="lo-name">J · Arch "A"</div><div class="lo-desc">Two curved strokes leaning into a peak — an abstract "A" and an arch. Soft take on the monogram.</div></div>
+    </div>
+    <div class="lo-foot"><div class="lock"><svg width="26" height="26" viewBox="0 0 48 48" fill="none"><path d="M10 39 Q15 15 24 13" stroke="url(#j2)" stroke-width="3.6" stroke-linecap="round" fill="none"/><path d="M38 39 Q33 15 24 13" stroke="url(#j2)" stroke-width="3.6" stroke-linecap="round" fill="none"/><circle cx="24" cy="13" r="3.2" fill="#2e9e94"/><defs><linearGradient id="j2" x1="10" y1="13" x2="38" y2="39"><stop stop-color="#2660b1"/><stop offset="1" stop-color="#2e9e94"/></linearGradient></defs></svg> Arcolab <span class="muted">Health</span></div></div>
+  </div>
+
+  <!-- K: Arc with heartbeat -->
+  <div class="lo" data-choice="k" onclick="toggleSelect(this)">
+    <div class="lo-top">
+      <div class="sizes">
+        <svg width="60" height="60" viewBox="0 0 48 48" fill="none"><path d="M8 30 C8 16 18 14 21 25 l2.5 8 l3-15 l2.5 7 C32 17 40 18 40 30" stroke="url(#k1)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><defs><linearGradient id="k1" x1="8" y1="14" x2="40" y2="33"><stop stop-color="#2660b1"/><stop offset="1" stop-color="#2e9e94"/></linearGradient></defs></svg>
+        <svg width="16" height="16" viewBox="0 0 48 48" fill="none"><path d="M8 30 C8 16 18 14 21 25 l2.5 8 l3-15 l2.5 7 C32 17 40 18 40 30" stroke="#2660b1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+      <div><div class="lo-name">K · Arc Pulse (line)</div><div class="lo-desc">A single continuous arc that dips into one heartbeat — the no-tile, minimal version of round 1's A.</div></div>
+    </div>
+    <div class="lo-foot"><div class="lock"><svg width="26" height="26" viewBox="0 0 48 48" fill="none"><path d="M8 30 C8 16 18 14 21 25 l2.5 8 l3-15 l2.5 7 C32 17 40 18 40 30" stroke="url(#k2)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><defs><linearGradient id="k2" x1="8" y1="14" x2="40" y2="33"><stop stop-color="#2660b1"/><stop offset="1" stop-color="#2e9e94"/></linearGradient></defs></svg> Arcolab <span class="muted">Health</span></div></div>
+  </div>
+
+</div>

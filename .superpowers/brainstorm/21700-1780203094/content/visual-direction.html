@@ -1,0 +1,75 @@
+<h2>Three visual directions for Arcolab Health</h2>
+<p class="subtitle">Same brand DNA (deep medical blue + teal, Inter + JetBrains Mono). Each takes a different mood. Click the one that feels most "us".</p>
+
+<style>
+  .vd-grid { display:grid; grid-template-columns:1fr; gap:22px; }
+  @media(min-width:900px){ .vd-grid{ grid-template-columns:repeat(3,1fr);} }
+  .vd { border-radius:14px; overflow:hidden; border:1px solid #d8dee6; cursor:pointer; transition:transform .15s, box-shadow .15s; background:#fff;}
+  .vd:hover{ transform:translateY(-4px); box-shadow:0 12px 30px rgba(20,40,70,.14);}
+  .vd.selected{ outline:3px solid #2563a8; outline-offset:2px;}
+  .vd-screen{ height:230px; padding:22px; font-family:Inter,system-ui,sans-serif; position:relative; overflow:hidden;}
+  .vd-label{ font:600 11px/1 'JetBrains Mono',monospace; letter-spacing:.12em; text-transform:uppercase; opacity:.7; }
+  .vd-h{ font-weight:700; font-size:21px; line-height:1.15; margin:14px 0 8px;}
+  .vd-p{ font-size:12.5px; line-height:1.5; opacity:.8; max-width:90%;}
+  .vd-btn{ display:inline-block; margin-top:14px; font:600 11px/1 Inter; padding:9px 14px; border-radius:8px;}
+  .vd-body{ padding:16px 18px; border-top:1px solid #eef1f5;}
+  .vd-body h3{ margin:0 0 4px; font-size:15px;}
+  .vd-body p{ margin:0; font-size:12.5px; color:#5a6675; line-height:1.5;}
+
+  /* A: Clinical Calm (light) */
+  .a{ background:linear-gradient(160deg,#f6f9fc 0%,#eef4f9 100%); color:#16263b;}
+  .a .vd-label{ color:#2c7a7b;}
+  .a .vd-btn{ background:#1f5d9e; color:#fff;}
+  .a .dot{ position:absolute; right:-30px; top:-30px; width:130px; height:130px; border-radius:50%; background:radial-gradient(circle,#36b3a8 0%,transparent 70%); opacity:.25;}
+
+  /* B: Techy Dark */
+  .b{ background:#0e1b2e; color:#e7eef6; background-image:linear-gradient(#16273f 1px,transparent 1px),linear-gradient(90deg,#16273f 1px,transparent 1px); background-size:26px 26px;}
+  .b .vd-label{ color:#3fd0c0;}
+  .b .vd-h{ color:#f3f7fb;}
+  .b .vd-btn{ background:#3fd0c0; color:#06121f;}
+  .b .glow{ position:absolute; left:-20px; bottom:-40px; width:160px; height:160px; border-radius:50%; background:radial-gradient(circle,#1f5d9e 0%,transparent 70%); opacity:.5;}
+
+  /* C: Editorial Tech (light, structured) */
+  .c{ background:#ffffff; color:#16263b; border-left:none;}
+  .c .vd-label{ color:#1f5d9e;}
+  .c .vd-h{ font-size:23px;}
+  .c .vd-btn{ background:transparent; color:#1f5d9e; border:1.5px solid #1f5d9e;}
+  .c .rule{ height:1px; background:#e3e9f0; margin:6px 0 0;}
+  .c .ticks{ position:absolute; right:18px; top:18px; font:500 10px/1.6 'JetBrains Mono',monospace; color:#9aa7b6; text-align:right;}
+</style>
+
+<div class="vd-grid">
+  <div class="vd" data-choice="a" onclick="toggleSelect(this)">
+    <div class="vd-screen a">
+      <div class="dot"></div>
+      <div class="vd-label">Arcolab Health</div>
+      <div class="vd-h">Modern care,<br>built for clinics.</div>
+      <div class="vd-p">Empowering primary care physicians with AI and thoughtful technology.</div>
+      <div class="vd-btn">Contact us</div>
+    </div>
+    <div class="vd-body"><h3>A · Clinical Calm</h3><p>Light, airy, soft gradients. Reassuring and medical. Trust-first.</p></div>
+  </div>
+
+  <div class="vd" data-choice="b" onclick="toggleSelect(this)">
+    <div class="vd-screen b">
+      <div class="glow"></div>
+      <div class="vd-label">// arcolab.health</div>
+      <div class="vd-h">Modern care,<br>built for clinics.</div>
+      <div class="vd-p">Empowering primary care physicians with AI and thoughtful technology.</div>
+      <div class="vd-btn">Contact us</div>
+    </div>
+    <div class="vd-body"><h3>B · Techy Dark</h3><p>Dark, gridlines, glowing teal, mono labels. Confident startup / engineering feel.</p></div>
+  </div>
+
+  <div class="vd" data-choice="c" onclick="toggleSelect(this)">
+    <div class="vd-screen c">
+      <div class="ticks">01 / AI<br>02 / EMR<br>03 / care</div>
+      <div class="vd-label">ARCOLAB HEALTH</div>
+      <div class="vd-h">Modern care,<br>built for clinics.</div>
+      <div class="rule"></div>
+      <div class="vd-p" style="margin-top:10px;">Empowering primary care physicians with AI and thoughtful technology.</div>
+      <div class="vd-btn">Contact us →</div>
+    </div>
+    <div class="vd-body"><h3>C · Editorial Tech</h3><p>White, precise, mono accents &amp; hairlines. Crisp, professional, quietly techy.</p></div>
+  </div>
+</div>
