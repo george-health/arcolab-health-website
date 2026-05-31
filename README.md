@@ -28,8 +28,8 @@ python3 -m http.server 8000   # → http://localhost:8000
 
 ## Before going live — TODO
 
-1. **Contact link.** Replace every `GOOGLE_FORM_URL_HERE` in `index.html` with
-   your real Google Form URL (3 places: header, hero, contact section).
+1. ~~Contact link~~ — done: all "Contact" buttons link to
+   `https://forms.gle/kkwiCuYe9bMiqfRy8` (header, hero, contact section).
 2. Confirm the contact email `arcolabhealth@gmail.com` is correct.
 3. (Optional) Tweak the headline / copy — all text is intentionally vague about
    the product, per the early-stage brief.
