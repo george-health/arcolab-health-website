@@ -3,220 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arcolab Health — Modern care, built for clinics</title>
-  <meta name="description" content="Arcolab Health makes AI tools for family doctors and the clinics they work in — built with physicians, not just for them." />
-  <meta name="theme-color" content="#f7f9fb" />
+  <title>Arcolab Health</title>
+  <meta name="description" content="We're training AI agents to think like doctors. Arcolab Health is a healthtech startup, currently in stealth." />
+  <meta name="theme-color" content="#f6f8fb" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Arcolab Health" />
-  <meta property="og:description" content="AI tools for family doctors and the clinics they work in." />
+  <meta property="og:description" content="Building the future of healthcare — we're training AI agents to think like doctors." />
   <meta property="og:type" content="website" />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
-  <!-- Fonts: Inter + JetBrains Mono (brand DNA) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;560;600;650;680&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;560;600;650&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ============================ header ============================ -->
-  <header class="site-header" id="header">
-    <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Arcolab Health home">
-        <svg class="mark" viewBox="5 8 38 38" fill="none" aria-hidden="true">
-          <path d="M7 33 a17 17 0 0 1 34 0" stroke="url(#g1)" stroke-width="3.2" stroke-linecap="round"/>
-          <line x1="6" y1="38" x2="42" y2="38" stroke="#c6d1dd" stroke-width="2.6" stroke-linecap="round"/>
-          <circle cx="24" cy="33" r="3.6" fill="#2e9e94"/>
-          <defs>
-            <linearGradient id="g1" x1="7" y1="16" x2="41" y2="33" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#2660b1"/><stop offset="1" stop-color="#2e9e94"/>
-            </linearGradient>
-          </defs>
-        </svg>
-        <span><b>Arcolab</b> Health</span>
-      </a>
-      <a class="btn" href="https://forms.gle/kkwiCuYe9bMiqfRy8" target="_blank" rel="noopener">
-        Contact <span class="arrow" aria-hidden="true">→</span>
-      </a>
-    </div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Arcolab Health home">
+      <svg class="mark" viewBox="6 5 46 46" aria-hidden="true"><path d="M13 47 L13 29 Q13 9 29 9 Q45 9 45 29 L45 47 L34 47 C34 36 24 36 24 47 Z" fill="#1a73e8"/></svg>
+      <span><b>Arcolab</b>&nbsp;Health</span>
+    </a>
   </header>
 
   <main id="top">
-
-    <!-- ============================ hero ============================ -->
     <section class="hero">
-      <div class="wrap">
-        <span class="eyebrow" data-reveal style="--d:0ms">Healthtech · Primary care</span>
-        <h1 data-reveal style="--d:80ms">
-          Modern care,<br /><span class="grad">built for clinics.</span>
+      <canvas class="fx" aria-hidden="true"></canvas>
+      <div class="vignette" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <h1>
+          Building the future of healthcare.
+          <span class="accent">We're training AI agents to think like doctors.</span>
         </h1>
-        <p class="sub" data-reveal style="--d:180ms">
-          We make AI tools for family doctors and the clinics they work in.
-          And we build them with physicians, not just for them.
-        </p>
-        <div class="cta-row" data-reveal style="--d:280ms">
-          <a class="btn lg" href="https://forms.gle/kkwiCuYe9bMiqfRy8" target="_blank" rel="noopener">
+        <p class="note">In stealth. Product launch to come.</p>
+        <div class="cta">
+          <a class="btn" href="https://forms.gle/kkwiCuYe9bMiqfRy8" target="_blank" rel="noopener">
             Get in touch <span class="arrow" aria-hidden="true">→</span>
           </a>
-          <span class="cta-note">// Early days. Talking to our first clinics.</span>
+          <span class="cta-note">or <a href="mailto:hello@arcolab.health">hello@arcolab.health</a></span>
         </div>
       </div>
     </section>
-
-    <!-- ======================== what we do ========================= -->
-    <section class="section-pad" id="what">
-      <div class="wrap">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow">What we do</span>
-          <h2>Here's what we're building.</h2>
-          <p>We're modernizing primary care EMRs with AI by building an assistant that OCRs and summarizes records and answers questions with cited sources, plus automated form-filling.</p>
-        </div>
-        <div class="cards">
-          <article class="card" data-reveal>
-            <div class="idx">01</div>
-            <div class="ico" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a4 4 0 0 0-4 4v1a3 3 0 0 0 0 6 4 4 0 0 0 8 0 3 3 0 0 0 0-6V7a4 4 0 0 0-4-4Z"/><path d="M12 3v18M8 8h-.5M16 8h.5"/></svg>
-            </div>
-            <h3>AI that helps, not replaces</h3>
-            <p>The doctor stays in charge. Our tools take care of the tedious parts so they don't have to think about them.</p>
-          </article>
-          <article class="card" data-reveal>
-            <div class="idx">02</div>
-            <div class="ico" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h4M8 17h7"/></svg>
-            </div>
-            <h3>Works with what you have</h3>
-            <p>We fit into the systems clinics already run on. No rip-and-replace, no months of setup.</p>
-          </article>
-          <article class="card" data-reveal>
-            <div class="idx">03</div>
-            <div class="ico" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 5 4-10 2 5h6"/></svg>
-            </div>
-            <h3>Less paperwork</h3>
-            <p>So much of a doctor's day goes to admin. We're chipping away at it, one task at a time.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================== who it's for ======================= -->
-    <section class="band section-pad" id="who">
-      <div class="wrap inner">
-        <div data-reveal>
-          <span class="eyebrow">Who it's for</span>
-          <h2>We work closely with the people who'll use this.</h2>
-          <p>We talk to family doctors and clinics from day one. They tell us what's actually broken, and we go build the fix. If you've got opinions about your tools, we want to hear them.</p>
-        </div>
-        <div class="audience" data-reveal>
-          <div class="item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.6 2-3.5 2-5a5 5 0 0 0-10 0M5 9a3 3 0 1 0 0 6"/><path d="M11 9a5 5 0 0 1-6 5v3a4 4 0 0 0 8 0"/></svg>
-            <div><b>Family doctors</b><span>And the nurses and staff who keep things running.</span></div>
-          </div>
-          <div class="item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6M9 11h.01M15 11h.01"/></svg>
-            <div><b>Clinics</b><span>Independent practices and group clinics alike.</span></div>
-          </div>
-          <div class="item">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>
-            <div><b>Early partners</b><span>People who want a say in what we build next.</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================= approach / values =================== -->
-    <section class="section-pad" id="approach">
-      <div class="wrap">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow">Our approach</span>
-          <h2>A few things we won't cut corners on.</h2>
-          <p>This is health software. People's care depends on it, so some things aren't up for debate.</p>
-        </div>
-        <div class="values" data-reveal>
-          <div class="value">
-            <div class="vnum">/ 01</div>
-            <h3><span class="dot" aria-hidden="true"></span>Doctors come first</h3>
-            <p>If it doesn't make a physician's day easier, we don't ship it. Simple as that.</p>
-          </div>
-          <div class="value">
-            <div class="vnum">/ 02</div>
-            <h3><span class="dot" aria-hidden="true"></span>Careful with patient data</h3>
-            <p>We collect as little as we can and guard what we hold. It's health data; we treat it that way.</p>
-          </div>
-          <div class="value">
-            <div class="vnum">/ 03</div>
-            <h3><span class="dot" aria-hidden="true"></span>Built in Canada</h3>
-            <p>We know how Canadian primary care actually works, and we build for the way it really runs.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================ contact ======================== -->
-    <section class="section-pad" id="contact">
-      <div class="wrap">
-        <div class="cta" data-reveal>
-          <span class="eyebrow">Get in touch</span>
-          <h2>Want to talk?</h2>
-          <p>If you're a doctor or run a clinic and any of this sounds useful, drop us a line. We're always up for a conversation.</p>
-          <a class="btn lg" href="https://forms.gle/kkwiCuYe9bMiqfRy8" target="_blank" rel="noopener">
-            Reach out <span class="arrow" aria-hidden="true">→</span>
-          </a>
-          <span class="mailto">or just email <a href="mailto:arcolabhealth@gmail.com">arcolabhealth@gmail.com</a></span>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- ============================ footer =========================== -->
   <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <a class="brand" href="#top" aria-label="Arcolab Health home">
-        <svg class="mark" viewBox="5 8 38 38" fill="none" aria-hidden="true">
-          <path d="M7 33 a17 17 0 0 1 34 0" stroke="url(#g2)" stroke-width="3.2" stroke-linecap="round"/>
-          <line x1="6" y1="38" x2="42" y2="38" stroke="#c6d1dd" stroke-width="2.6" stroke-linecap="round"/>
-          <circle cx="24" cy="33" r="3.6" fill="#2e9e94"/>
-          <defs>
-            <linearGradient id="g2" x1="7" y1="16" x2="41" y2="33" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#2660b1"/><stop offset="1" stop-color="#2e9e94"/>
-            </linearGradient>
-          </defs>
-        </svg>
-        <span><b>Arcolab</b> Health</span>
-      </a>
-      <div class="footer-meta">
-        <a class="mono" href="mailto:arcolabhealth@gmail.com">arcolabhealth@gmail.com</a>
-        <span>© 2026 Arcolab Health</span>
-      </div>
+    <a class="brand" href="#top" aria-label="Arcolab Health home">
+      <svg class="mark" viewBox="6 5 46 46" aria-hidden="true"><path d="M13 47 L13 29 Q13 9 29 9 Q45 9 45 29 L45 47 L34 47 C34 36 24 36 24 47 Z" fill="#1a73e8"/></svg>
+      <span><b>Arcolab</b>&nbsp;Health</span>
+    </a>
+    <div class="footer-meta">
+      <a href="mailto:hello@arcolab.health">hello@arcolab.health</a>
+      <span>© 2026 Arcolab Health</span>
     </div>
   </footer>
 
-  <script>
-    // Header border on scroll
-    const header = document.getElementById('header');
-    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-
-    // Reveal on scroll (hero reveals immediately; rest on intersection)
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const els = document.querySelectorAll('[data-reveal]');
-    if (reduce) {
-      els.forEach(el => el.classList.add('in'));
-    } else {
-      // Hero is above the fold — reveal on load with its stagger delays
-      document.querySelectorAll('.hero [data-reveal]').forEach(el => el.classList.add('in'));
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
-      document.querySelectorAll(':not(.hero) > [data-reveal], .cards [data-reveal], .inner [data-reveal]').forEach(el => io.observe(el));
-    }
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
