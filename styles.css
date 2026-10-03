@@ -171,6 +171,7 @@ h1 .accent {
   padding: 40px clamp(22px, 6vw, 32px) 80px;
 }
 .legal h1 { font-size: clamp(28px, 4vw, 36px); text-wrap: balance; }
+.legal--wide { max-width: 960px; }
 .legal h2 {
   margin-top: 40px;
   font-size: 20px;
@@ -201,6 +202,21 @@ h1 .accent {
 .legal .toc li + li { margin-top: 4px; }
 .legal .toc a { color: var(--fg); text-decoration: none; }
 .legal .toc a:hover { color: var(--brandblue); }
+.legal .table-wrap { margin-top: 16px; overflow-x: auto; }
+.legal table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14.5px;
+}
+.legal th, .legal td {
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+.legal th { font-size: 13px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.legal .vendor { display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+.legal .vendor-logo { flex: none; border-radius: 7px; box-shadow: 0 0 0 1px var(--line); }
 
 /* ----------------------------- responsive ------------------------ */
 @media (max-width: 560px) {
