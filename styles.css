@@ -163,6 +163,45 @@ h1 .accent {
 .footer-meta a { font-family: var(--mono); font-size: 12.5px; }
 .footer-meta a:hover { color: var(--brandblue); }
 
+/* ----------------------------- legal pages ----------------------- */
+.site-header--static { position: static; }
+.legal {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px clamp(22px, 6vw, 32px) 80px;
+}
+.legal h1 { font-size: clamp(28px, 4vw, 36px); text-wrap: balance; }
+.legal h2 {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  scroll-margin-top: 24px;
+}
+.legal h3 {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  scroll-margin-top: 24px;
+}
+.legal p, .legal ul { margin-top: 14px; font-size: 15.5px; }
+.legal ul { padding-left: 22px; }
+.legal li + li { margin-top: 8px; }
+.legal a { color: var(--brandblue); text-decoration: underline; text-underline-offset: 3px; }
+.legal .updated { font-size: 13px; color: var(--muted); }
+.legal .toc {
+  margin-top: 28px;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-size: 14.5px;
+}
+.legal .toc ol { padding-left: 20px; margin: 0; }
+.legal .toc ul { margin-top: 4px; font-size: inherit; }
+.legal .toc li + li { margin-top: 4px; }
+.legal .toc a { color: var(--fg); text-decoration: none; }
+.legal .toc a:hover { color: var(--brandblue); }
+
 /* ----------------------------- responsive ------------------------ */
 @media (max-width: 560px) {
   .hero { padding-top: 84px; }
