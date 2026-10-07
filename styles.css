@@ -164,7 +164,8 @@ h1 .accent {
 .footer-meta a:hover { color: var(--brandblue); }
 
 /* ----------------------------- 404 page -------------------------- */
-body.notfound { display: flex; flex-direction: column; min-height: 100vh; min-height: 100dvh; }
+body.notfound,
+body.legal-page { display: flex; flex-direction: column; min-height: 100vh; min-height: 100dvh; }
 .notfound-main {
   flex: 1;
   display: flex;
@@ -194,6 +195,7 @@ body.notfound { display: flex; flex-direction: column; min-height: 100vh; min-he
 }
 .legal h1 { font-size: clamp(28px, 4vw, 36px); text-wrap: balance; }
 .legal--wide { max-width: 960px; }
+.legal-page .legal { flex: 1; width: 100%; }
 .legal h2 {
   margin-top: 40px;
   font-size: 20px;
